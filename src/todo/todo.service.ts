@@ -11,7 +11,7 @@ export class TodoService {
   }
 
   getTodosById(todoId: number) {
-    return this.prisma.bookmark.findFirst({
+    return this.prisma.todos.findFirst({
       where: {
         id: todoId,
       },
@@ -29,7 +29,6 @@ export class TodoService {
   }
 
   async editTodo(id: number, dto: CreateTodoDto) {
-    // get the bookmark by id
     const todo = await this.prisma.todos.findUnique({
       where: {
         id,
