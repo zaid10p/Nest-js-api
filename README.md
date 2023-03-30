@@ -6,13 +6,12 @@
 
 ```javascript
 1. yarn install
-2. yarn db:dev:restart // start postgres in docker
-3. yarn prisma:dev // runs migrations in development mode
-4. yarn start:dev // start nest api in dev mode
+2. yarn db:dev:restart // start postgres in docker and runs migrations in prisma
+3. yarn start:dev // start nest api in dev mode
 
 ```
 
-### Run Prisma
+### Run Prisma Studio
 
 ```javascript
 npx prisma migrate dev // to run migrations to prisma
